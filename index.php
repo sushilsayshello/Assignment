@@ -29,7 +29,7 @@ switch( $action ) {
         }
         break;
     
-    //Initiate when item is selected and chosen to be deleted
+//Initiate when item is selected and chosen to be deleted
     case 'Delete Item':
         $Item_index = filter_input(INPUT_POST, 'Itemid', FILTER_VALIDATE_INT);
         if ($Item_index === NULL || $Item_index === FALSE) {
@@ -40,7 +40,7 @@ switch( $action ) {
         }
         break;
 
-    //Initiate when item is selected and chosen to be modified
+//Initiate when item is selected and chosen to be modified
         case 'Modify Item':
             $Item_index = filter_input(INPUT_POST, 'Itemid', FILTER_VALIDATE_INT);
             if ($Item_index === NULL || $Item_index === FALSE) {
@@ -50,7 +50,7 @@ switch( $action ) {
             }          
             break;
             
-    //Initiate when item is edited and chosen to be saved
+//Initiate when item is edited and chosen to be saved
         case 'Save Changes':
                 $i = filter_input(INPUT_POST, 'modifiedItemid', FILTER_VALIDATE_INT);
                 $modified_Item = filter_input(INPUT_POST, 'modifiedItem');
@@ -64,12 +64,12 @@ switch( $action ) {
                 }
                 break;
 
-    //Initiate when item is not edited and chosen to be cancelled   
+//Initiate when item is not edited and chosen to be cancelled   
         case 'Cancel Changes':
                 $modified_Item = '';
                 break;
 
-    //Initiate when item is sorted alphabetically 
+//Initiate when item is sorted alphabetically 
         case 'Sort Items':
 
             $arrlength = count($Item_list);
