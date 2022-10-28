@@ -50,7 +50,7 @@
         </form>
         <br>
 
-<!-- The modify/promote/delete form -->
+<!-- The modify/sort/delete form -->
 <?php if (count($Item_list) > 0 && empty($Item_to_modify)) : ?>
         <h2>Select Item:</h2>
         <form action="." method="post" >
