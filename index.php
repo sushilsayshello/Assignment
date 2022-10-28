@@ -1,5 +1,9 @@
 <?php
-
+//get Itemlist array from POST
+$Item_list = filter_input(INPUT_POST, 'Itemlist', FILTER_DEFAULT,                  
+                          FILTER_REQUIRE_ARRAY);
+if ($Item_list === NULL) {
+    $Item_list = array();
 
 // adding some hard-coded starting values to make testing easier
 $Item_list[] = 'Milk';
