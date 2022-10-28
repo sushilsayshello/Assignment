@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-
+<head>
+    <title>Shopping List Manager</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
 <body>
 
