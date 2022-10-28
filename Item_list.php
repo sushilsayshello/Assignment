@@ -13,7 +13,15 @@
     </header>
 
     <main>
-
+<!-- Errors -->
+        <?php if (count($errors) > 0) : ?>
+        <h2>Errors</h2>
+        <ul>
+            <?php foreach($errors as $error) : ?>
+            <li><?php echo htmlspecialchars($error); ?></li>
+            <?php endforeach; ?>
+        </ul>
+        <?php endif; ?>
 
 
 <!-- The Items are displayed -->
